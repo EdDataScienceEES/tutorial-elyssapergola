@@ -1,0 +1,20 @@
+---
+title: "Line Chart Tutorial"
+author: "Elyssa Pergola"
+date: "2022-11-27"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+# How To Create A Bar Chart
+
+## Introduction
+
+What is a line chart? A line chart
+
+
+## Data We Will Use For This Tutorial
+
+
+
