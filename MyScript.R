@@ -22,3 +22,7 @@ ggplot(data, aes(x=Year)) +
   geom_line(aes(y = X._real_trees_sold), color = "darkred") +
   geom_line(aes(y = X._fake_trees_sold), color = "steelblue") +
   geom_line(aes(y = total_trees_sold), color = "steelblue")
+
+
+
+# Connected Scatterplot
