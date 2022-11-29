@@ -42,11 +42,21 @@ ggplot(Tree_Data, aes(x=Year)) +
   labs(y = "Number of Trees Sold", x = "Year") # Y and x labels
 
 ## Adding Colors To The Lines
-
-
+ggplot(Tree_Data, aes(x=Year)) +
+  geom_line(aes(y = X._real_trees_sold), color = "forestgreen") + # Line for real trees sold, changing color
+  geom_line(aes(y = X._fake_trees_sold), color = "red") + # Line for fake trees sold, changing color
+  geom_line(aes(y = total_trees_sold), color = "goldenrod1") + # Line for total trees sold, changing color
+  ggtitle("Trees Sold Over Time") + # Title
+  labs(y = "Number of Trees Sold", x = "Year") # Y and x labels
 
 ## Adding a Legend
 
+ggplot(Tree_Data, aes(x=Year)) +
+  geom_line(aes(y = X._real_trees_sold), color = "forestgreen") + # Line for real trees sold, changing color
+  geom_line(aes(y = X._fake_trees_sold), color = "red") + # Line for fake trees sold, changing color
+  geom_line(aes(y = total_trees_sold), color = "goldenrod1") + # Line for total trees sold, changing color
+  ggtitle("Trees Sold Over Time") + # Title
+  labs(y = "Number of Trees Sold", x = "Year") # Y and x labels
 
 
 # Connected Scatterplot

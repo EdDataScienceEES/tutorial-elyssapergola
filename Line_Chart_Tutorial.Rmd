@@ -92,6 +92,11 @@ ggplot(Tree_Data, aes(x=Year)) +
 
 
 ## Adding Colors To The Lines
-In order to differentiate what the different lines are showing, we will want to make the lines different colors. In honor of the holiday season, we will be using christmas colors
+In order to differentiate what the different lines are showing, we will want to make the lines different colors. In honor of the holiday season, we will be using Christmas colors: gold, green, and red. 
+
+In order to find the colors I wanted, I just googled colors to use in ggplot in R. This is the link I found: http://sape.inf.usi.ch/quick-reference/ggplot2/colour
+
+Here are some of the color options:
+
 
 
