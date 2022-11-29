@@ -11,10 +11,35 @@ output:
 
 ## Introduction
 
-What is a line chart? A line chart
+What is a line chart? A line chart depicts the changes in values over a certain set of variables on the x-axis. The x-axis is using a measure of time (days, months, years). This is an example of a typical line graph:
+
+<img src="Pics/Generic_Line_Graph.jpeg" width="1000px" height="700px" /> 
+
+
 
 
 ## Data We Will Use For This Tutorial
+
+Since it is the holiday season, we will be looking at data involving christmas trees. Some people choose to get a real Christmas tree, while other prefer to use a fake one. We will be looking at the total number of trees sold, the number of fake trees sold, and the number of real trees sold throughout the years.  
+
+## How To Start
+
+You will need to install the packages that you will be using. You already may have some of these installed, so if you do it is unnecessary to install them again.
+
+```{r}
+
+```
+
+Then, you will need to load the libraries of these packages.
+
+```{r}
+
+```
+
+Next you will need 
+```{r}
+
+```
 
 
 
