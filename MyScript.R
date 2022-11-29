@@ -52,10 +52,12 @@ ggplot(Tree_Data, aes(x=Year)) +
 ## Adding a Legend
 
 ggplot(Tree_Data, aes(x=Year)) +
-  geom_line(aes(y = X._real_trees_sold), color = "forestgreen") + # Line for real trees sold, changing color
-  geom_line(aes(y = X._fake_trees_sold), color = "red") + # Line for fake trees sold, changing color
-  geom_line(aes(y = total_trees_sold), color = "goldenrod1") + # Line for total trees sold, changing color
+  geom_line(aes(y = X._real_trees_sold, color = "Real Trees Sold")) + # Line for real trees sold, changing color
+  geom_line(aes(y = X._fake_trees_sold, color = "Fake Trees Sold")) + # Line for fake trees sold, changing color
+  geom_line(aes(y = total_trees_sold, color = "Total Trees Sold")) + # Line for total trees sold, changing color
   ggtitle("Trees Sold Over Time") + # Title
+  scale_colour_manual("", breaks = c("Real Trees Sold", "Fake Trees Sold", "Total Trees Sold"), # Making the Legend
+  values = c("forestgreen", "red", "goldenrod1")) + # Assigning colors to each of the lines
   labs(y = "Number of Trees Sold", x = "Year") # Y and x labels
 
 
