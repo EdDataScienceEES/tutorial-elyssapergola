@@ -15,3 +15,5 @@ I chose to do my final assignment about how to make a line graph in R.
 5. Scripts: This is where I put the script I used to test out my tutorial.
 
 6. Workflow: This is where I put my ideas for tutorial. 
+
+7. Line_Chart_Tutorial.Rmd: This is my tutorial
