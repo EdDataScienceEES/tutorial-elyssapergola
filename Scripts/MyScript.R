@@ -14,7 +14,7 @@ library(readr)
 library(gridExtra)
 library(rmarkdown)
 
-Tree_Data <- read.csv("Christmas_Tree.csv") # Loading Tree Data
+Tree_Data <- read.csv("Data/Christmas_Tree.csv") # Loading Tree Data
 
 ## Simple Line Chart
 ggplot(Tree_Data, aes(x=Year, y=X._real_trees_sold)) + # Year is on the X-axis, Real trees sold is on the y axis

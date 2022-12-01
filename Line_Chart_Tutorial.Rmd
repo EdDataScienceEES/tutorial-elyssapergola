@@ -51,7 +51,7 @@ library(readr)
 
 Next you will need to load the tree data that we will be using to make the line charts:
 ```{r}
-Tree_Data <- read.csv("Christmas_Tree.csv") # Loading Tree Data
+Tree_Data <- read.csv("Data/Christmas_Tree.csv") # Loading Tree Data
 ```
 
 --- 
@@ -144,7 +144,7 @@ Now, it is time to try to make a line graph by yourself. Sally needs your help. 
 Use the data: Gift_Data.csv
 
 <p align="center">
-<img src="Pics/Tree.png" width="300px" height="300x"/>
+<img src="Pics/Present.jpg" width="300px" height="300x"/>
 </p>
 
 
@@ -153,10 +153,10 @@ Use the data: Gift_Data.csv
 <details>
   <summary>Click For Answer</summary>
 ```{r}
-Gift_Data <- read.csv("Gift_Data.csv")
+Gift_Data <- read.csv("Data/Gift_Data.csv")
 
-ggplot(Gift_Data, aes(x=Year)) + # Year is on the X-axis, Real trees sold is on the y axis
-  geom_line(aes(y=Number_of_Presents_Sally_Got), color = "pink") + # Makes it a line chart
+ggplot(Gift_Data, aes(x=Year)) + # Year is on the X-axis
+  geom_line(aes(y=Number_of_Presents_Sally_Got), color = "pink") + # Makes it a line chart and makes it pink
   labs(y = "Number of Presents Sally Got", x = "Year") + # X and y labels
   ggtitle("Number of Presents Sally Got For Christmas Over Time") # Title
 ```
