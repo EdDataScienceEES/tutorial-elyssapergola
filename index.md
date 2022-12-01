@@ -179,12 +179,14 @@ Use the data: Gift_Data.csv
 
 <details>
   <summary>Click For Answer</summary>
-```{r}
+
 Gift_Data <- read.csv("Data/Gift_Data.csv")
 
 ggplot(Gift_Data, aes(x=Year)) + # Year is on the X-axis
   geom_line(aes(y=Number_of_Presents_Sally_Got), color = "pink") + # Makes it a line chart and makes it pink
   labs(y = "Number of Presents Sally Got", x = "Year") + # X and y labels
   ggtitle("Number of Presents Sally Got For Christmas Over Time") # Title
-```
+
+
+
   
