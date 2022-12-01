@@ -41,6 +41,7 @@ ggplot(Tree_Data, aes(x=Year)) +
   ggtitle("Trees Sold Over Time") + # Title
   labs(y = "Number of Trees Sold", x = "Year") # Y and x labels
 
+
 ## Adding Colors To The Lines
 ggplot(Tree_Data, aes(x=Year)) +
   geom_line(aes(y = X._real_trees_sold), color = "forestgreen") + # Line for real trees sold, changing color
@@ -59,8 +60,6 @@ ggplot(Tree_Data, aes(x=Year)) +
   scale_colour_manual("", breaks = c("Real Trees Sold", "Fake Trees Sold", "Total Trees Sold"), # Making the Legend
   values = c("forestgreen", "red", "goldenrod1")) + # Assigning colors to each of the lines
   labs(y = "Number of Trees Sold", x = "Year") # Y and x labels
-
-
 
 # Elf Data
 Gift_Data <- read.csv("Gift_Data.csv")

@@ -65,6 +65,8 @@ ggplot(Tree_Data, aes(x=Year, y=X._real_trees_sold)) + # Year is on the X-axis, 
   geom_line() # Makes it a line chart
 ```
 
+---
+
 # Add the fake trees line and total trees line
 
 Next, we will add the lines for the fake trees sold and the total tree sold over the years. 
@@ -75,6 +77,8 @@ ggplot(Tree_Data, aes(x=Year)) +
   geom_line(aes(y = X._fake_trees_sold)) + # Line for fake trees sold
   geom_line(aes(y = total_trees_sold)) # Line for total trees sold
 ```
+
+---
 
 # Add a title
 
@@ -88,6 +92,8 @@ ggplot(Tree_Data, aes(x=Year)) +
   ggtitle("Trees Sold Over Time") # Title
 ```
 
+---
+
 # Add axis labels
 
 Next, we will add appropriate axis labels. 
@@ -100,6 +106,8 @@ ggplot(Tree_Data, aes(x=Year)) +
   labs(y = "Number of Trees Sold", x = "Year") # Y and x labels
 ```
 
+---
+
 ## Adding Colors To The Lines
 In order to differentiate what the different lines are showing, we will want to make the lines different colors. In honor of the holiday season, we will be using Christmas colors: gold, green, and red. 
 
@@ -109,6 +117,8 @@ Here are some of the color options:
 <img src="Pics/Colors.jpg"/> 
 
 You can also install other color packages: https://www.datanovia.com/en/blog/top-r-color-palettes-to-know-for-great-data-visualization/
+
+---
 
 ## Adding a Legend
 
@@ -125,11 +135,18 @@ ggplot(Tree_Data, aes(x=Year)) +
   labs(y = "Number of Trees Sold", x = "Year") # Y and x labels
 ```
 
+---
+
 ## Try To Make a Line Graph By Yourself
 
 Now, it is time to try to make a line graph by yourself. Sally needs your help. She wants to see how the number of presents she got during the holidays has changed over the years. When she behaves better, she gets more presents. This year, she wants to get more presents than she ever has! Help her make a line graph of the presents she has gotten over the years. She also has a special request of making the graph pink (since it is her favorite color). She also wants x and y axis labels and a title!
 
 Use the data: Gift_Data.csv
+
+<p align="center">
+<img src="Pics/Tree.png" width="300px" height="300x"/>
+</p>
+
 
 ### Solution?
 
