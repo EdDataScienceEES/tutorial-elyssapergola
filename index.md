@@ -144,11 +144,6 @@ Now, it is time to try to make a line graph by yourself. Sally needs your help. 
 
 Use the data: Gift_Data.csv
 
-<p align="center">
-<img src="Pics/Present.jpg" width="300px" height="300x"/>
-</p>
-
-
 ### Solution?
 
 <details>
@@ -187,6 +182,14 @@ ggplot(Gift_Data, aes(x=Year)) + # Year is on the X-axis
 7. https://codinhood.com/nano/git/center-images-text-github-readme
 
 8. https://prettydoc.statr.me/
+
+
+<p align="center">
+<img src="Pics/Present.jpg" width="300px" height="300x"/>
+</p>
+
+
+
 
 
 
