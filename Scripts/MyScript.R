@@ -5,6 +5,7 @@ install.packages("ggplot2")
 install.packages("readr")
 install.packages("gridextra")
 install.packages("rmarkdown")
+install.packages("knitr")
 
 # Libraries
 library(dplyr)
@@ -13,6 +14,7 @@ library(ggplot2)
 library(readr)
 library(gridExtra)
 library(rmarkdown)
+library(knitr)
 
 Tree_Data <- read.csv("Data/Christmas_Tree.csv") # Loading Tree Data
 

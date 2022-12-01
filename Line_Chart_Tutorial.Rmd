@@ -3,9 +3,10 @@ title: "Holiday Line Chart Tutorial"
 author: "Elyssa Pergola"
 date: "2022-11-27"
 output:
-    prettydoc::html_pretty:
-    theme: cayman
-    highlight: github
+  pdf_document: default
+  theme: cayman
+  prettydoc::html_pretty: null
+  highlight: github
 ---
 # How To Create A Holiday Line Chart
 
