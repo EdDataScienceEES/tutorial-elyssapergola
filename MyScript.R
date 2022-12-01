@@ -61,13 +61,11 @@ ggplot(Tree_Data, aes(x=Year)) +
   labs(y = "Number of Trees Sold", x = "Year") # Y and x labels
 
 
-# Connected Scatterplot
-
-
-
 
 # Elf Data
 Gift_Data <- read.csv("Gift_Data.csv")
 
-ggplot(Gift_Data, aes(x=Year, y=Number_of_Presents_Sally_Got)) + # Year is on the X-axis, Real trees sold is on the y axis
-  geom_line(aes(color = "pink")) # Makes it a line chart
+ggplot(Gift_Data, aes(x=Year)) + # Year is on the X-axis, Real trees sold is on the y axis
+  geom_line(aes(y=Number_of_Presents_Sally_Got), color = "pink") + # Makes it a line chart
+  labs(y = "Number of Presents Sally Got", x = "Year") + # X and y labels
+  ggtitle("Number of Presents Sally Got For Christmas Over Time") # Title
