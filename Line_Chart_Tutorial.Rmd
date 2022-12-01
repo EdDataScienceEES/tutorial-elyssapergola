@@ -13,6 +13,13 @@ output:
 <img src="Pics/Tree.png" width="300px" height="300x"/>
 </p>
 
+## Tutorial Aims
+
+1. Understand how to create a simple line graph with ggplot2
+2. Learn how to make a legend
+3. Learn how to label the axes
+4. Learn how to change the colors of the graph
+
 ## Introduction
 
 What is a line chart? A line chart depicts the changes in values over a certain set of variables on the x-axis. The x-axis is using a measure of time (days, months, years). This is an example of a typical line graph:
@@ -120,9 +127,11 @@ ggplot(Tree_Data, aes(x=Year)) +
 
 ## Try To Make a Line Graph By Yourself
 
-Now, it is try to make a line graph by yourself. Sally needs your help. She wants to see how the number of presents she got during the holidays has changed over the years. When she behaves better, she gets more presents. This year, she wants to get more presents than she ever has! Help her make a graph of the presents she has gotten over the years. She also has a special request of making the graph pink (since it is her favorite color). 
+Now, it is time to try to make a line graph by yourself. Sally needs your help. She wants to see how the number of presents she got during the holidays has changed over the years. When she behaves better, she gets more presents. This year, she wants to get more presents than she ever has! Help her make a line graph of the presents she has gotten over the years. She also has a special request of making the graph pink (since it is her favorite color). 
 
+Use the data: Gift_Data.csv
 
+### Solution?
 
 <details>
   <summary>Click For Answer</summary>
@@ -133,3 +142,11 @@ ggplot(Gift_Data, aes(x=Year, y=Number_of_Presents_Sally_Got)) + # Year is on th
   geom_line() # Makes it a line chart
 ```
   
+## Extra Resources To Check Out About Line Graphs
+
+1. https://www.data-to-viz.com/graph/line.html
+
+
+
+### My Sources
+

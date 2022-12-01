@@ -70,4 +70,4 @@ ggplot(Tree_Data, aes(x=Year)) +
 Gift_Data <- read.csv("Gift_Data.csv")
 
 ggplot(Gift_Data, aes(x=Year, y=Number_of_Presents_Sally_Got)) + # Year is on the X-axis, Real trees sold is on the y axis
-  geom_line() # Makes it a line chart
+  geom_line(aes(color = "pink")) # Makes it a line chart
