@@ -144,19 +144,11 @@ Now, it is time to try to make a line graph by yourself. Sally needs your help. 
 
 Use the data: Gift_Data.csv
 
-### Solution?
+<p align="center">
+<img src="Pics/Present.jpg" width="300px" height="300x"/>
+</p>
 
-<details>
-  <summary>Click For Answer</summary>
-```{r}
-Gift_Data <- read.csv("Data/Gift_Data.csv")
-
-ggplot(Gift_Data, aes(x=Year)) + # Year is on the X-axis
-  geom_line(aes(y=Number_of_Presents_Sally_Got), color = "pink") + # Makes it a line chart and makes it pink
-  labs(y = "Number of Presents Sally Got", x = "Year") + # X and y labels
-  ggtitle("Number of Presents Sally Got For Christmas Over Time") # Title
-```
-  
+## Scroll Down For Solution
 ## Extra Resources To Check Out About Line Graphs
 
 1. https://www.data-to-viz.com/graph/line.html
@@ -183,14 +175,16 @@ ggplot(Gift_Data, aes(x=Year)) + # Year is on the X-axis
 
 8. https://prettydoc.statr.me/
 
+### Solution?
 
-<p align="center">
-<img src="Pics/Present.jpg" width="300px" height="300x"/>
-</p>
+<details>
+  <summary>Click For Answer</summary>
+```{r}
+Gift_Data <- read.csv("Data/Gift_Data.csv")
 
-
-
-
-
-
-
+ggplot(Gift_Data, aes(x=Year)) + # Year is on the X-axis
+  geom_line(aes(y=Number_of_Presents_Sally_Got), color = "pink") + # Makes it a line chart and makes it pink
+  labs(y = "Number of Presents Sally Got", x = "Year") + # X and y labels
+  ggtitle("Number of Presents Sally Got For Christmas Over Time") # Title
+```
+  
