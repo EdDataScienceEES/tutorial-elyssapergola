@@ -190,6 +190,3 @@ ggplot(Gift_Data, aes(x=Year)) + # Year is on the X-axis, Real trees sold is on 
 
 
 
-
-
-
